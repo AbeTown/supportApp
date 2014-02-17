@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  uid: MyString
+  date_uploaded: MyString
+  date_created: MyString
+  company: MyString
+  model: MyString
+  error_type: MyText
+  environment: MyString
+  unit_type: MyString
+  firmware: MyString
+
+two:
+  uid: MyString
+  date_uploaded: MyString
+  date_created: MyString
+  company: MyString
+  model: MyString
+  error_type: MyText
+  environment: MyString
+  unit_type: MyString
+  firmware: MyString

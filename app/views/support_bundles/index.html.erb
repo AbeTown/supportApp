@@ -1,0 +1,43 @@
+<h1>Listing support_bundles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uid</th>
+      <th>Date uploaded</th>
+      <th>Date created</th>
+      <th>Company</th>
+      <th>Model</th>
+      <th>Error type</th>
+      <th>Environment</th>
+      <th>Unit type</th>
+      <th>Firmware</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @support_bundles.each do |support_bundle| %>
+      <tr>
+        <td><%= support_bundle.uid %></td>
+        <td><%= support_bundle.date_uploaded %></td>
+        <td><%= support_bundle.date_created %></td>
+        <td><%= support_bundle.company %></td>
+        <td><%= support_bundle.model %></td>
+        <td><%= support_bundle.error_type %></td>
+        <td><%= support_bundle.environment %></td>
+        <td><%= support_bundle.unit_type %></td>
+        <td><%= support_bundle.firmware %></td>
+        <td><%= link_to 'Show', support_bundle %></td>
+        <td><%= link_to 'Edit', edit_support_bundle_path(support_bundle) %></td>
+        <td><%= link_to 'Destroy', support_bundle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Support bundle', new_support_bundle_path %>
